@@ -96,7 +96,7 @@
 
 
 .mainTitle-blure {
-    filter: blur(4px);
+    filter: blur(2px);
 }
 
 .mainTitle-corect {
@@ -109,7 +109,7 @@
     font-style: italic;
     font-weight: 300;
     color: #fff;
-    filter: blur(4px);
+    filter: blur(2px);
 }
 
 .submit-btn {
@@ -624,3 +624,4 @@ footer p{
         font-size: 100px;
     }
 }
+
