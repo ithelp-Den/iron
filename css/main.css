@@ -263,7 +263,35 @@ color: #fff;
 .s4-step{
     width: 115px;
     padding-bottom: 7px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    will-change: opacity;
+    transition: opacity 0.4s ease 0.3s; 
 }
+
+/* чорний overlay */
+.s4-step::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  z-index: 2;
+
+  /* головне */
+  height: 100%;
+  transition: height 0.9s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* активний стан */
+.s4-step.is-visible {
+  opacity: 1;
+}
+
+.s4-step.is-visible::before {
+  height: 0%;
+}
+
 .s5{
     padding: 70px 10px 0 10px;
 }
@@ -624,4 +652,3 @@ footer p{
         font-size: 100px;
     }
 }
-
