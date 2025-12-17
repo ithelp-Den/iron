@@ -1,5 +1,3 @@
-
-
 .s1 {
     background-image: url(../images/fon-1.png);
     background-repeat: no-repeat;
@@ -152,6 +150,10 @@
     border: 1px solid #b1b1b1;
     border-radius: 41px;
     padding: 30px 5px;
+}
+
+.s2__content:hover{
+    border: 1px solid #b1b1b1;
 }
 
 .s2__content-title{
