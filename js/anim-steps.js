@@ -8,7 +8,7 @@ const observer = new IntersectionObserver(
 
         setTimeout(() => {
           entry.target.classList.add('is-visible');
-        }, index * 250); // послідовність
+        }, index * 400); // послідовність
 
         obs.unobserve(entry.target);
       }
